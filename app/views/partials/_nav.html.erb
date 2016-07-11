@@ -1,0 +1,23 @@
+<header class="mdl-layout__header mdl-layout__header--scroll">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">Red Social</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation -->
+      <nav class="mdl-navigation">
+         <!-- links navegacion -->
+         <% if user_signed_in? %>
+            <%= link_to "Cerrar sesiòn" , destroy_user_session_path, method: :delete ,class:"white-text"%> 
+         <% end %> 
+
+      </nav>
+    </div>
+  </header>
+
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Red Social</span>
+    <nav class="mdl-navigation">
+       <!-- links navegacion lado izquierdo -->
+    </nav>
+  </div>
