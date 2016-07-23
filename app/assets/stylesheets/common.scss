@@ -6,13 +6,34 @@ html,body{
 	height:100%;
 }
 
+.right-space{
+	margin-right : 1.5em;
+}
+
 .no-margin{
 	margin:0;
+}
+
+.medium{
+	font-size: 1.2em;
+}
+
+.large-padding{
+	padding: 10px 15px;
+}
+
+.padding-bottom{
+	padding-bottom: 1em;
 }
 
 .big-padding{
 	padding: 2em 1.5em;
 }
+
+.border-bottom{
+	border-bottom: 1px solid currentcolor;
+}
+
 .full-width{
 	width: 100%;
 
@@ -25,6 +46,7 @@ html,body{
 .top-space{
 	margin-top: 1em;
 }
+
 .remove-bullet-points{
 	list-style-type: none;
 	margin: 0;
@@ -44,4 +66,16 @@ html,body{
 
 .bordeRedondo{
 	border-radius: 20px;
+}
+
+.circle{
+	border-radius: 50%;
+}
+
+.relative{
+	position: relative;
+}
+
+.absolute{
+	position: absolute;
 }

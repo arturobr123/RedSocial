@@ -39,12 +39,35 @@ gem 'omniauth-facebook'
 
 gem 'flexbox_rb'
 
-
+gem "best_in_place", "~> 3.0.1"
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
 
+#perperclip subir archivos
+
+gem "paperclip" ,"~> 5.0.0beta1"
+
+#remotipart to submit images by AYAX
+gem "remotipart", github:"urielhdz/remotipart"
+
+#AASM para state machines
+gem "aasm"
+
+#Activemodel serializers xml 
+gem 'activemodel-serializers-xml', github: 'rails/activemodel-serializers-xml'
+
+#Draper para nuestros decoradores
+gem "draper", github:"audionerd/draper",branch:"rails5"
+
+#wilpaginate para paginacion
+gem "will_paginate"
+
+#sidekiq para los trabajos en el background
+gem 'sidekiq'
+#sinatra
+gem 'sinatra', github: "sinatra/sinatra", require: nil
 
 
 group :development, :test do

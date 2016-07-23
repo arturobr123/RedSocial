@@ -1,13 +1,30 @@
 <header class="mdl-layout__header mdl-layout__header--scroll">
     <div class="mdl-layout__header-row">
       <!-- Title -->
-      <span class="mdl-layout-title">Red Social</span>
+      <span class="mdl-layout-title">  <%= link_to "Red Social" ,root_path, class:"white-text right-space", style: "text-decoration:none;"%>  </span>
       <!-- Add spacer, to align navigation to the right -->
       <div class="mdl-layout-spacer"></div>
       <!-- Navigation -->
-      <nav class="mdl-navigation">
+      <nav class="mdl-navigation relative">
          <!-- links navegacion -->
          <% if user_signed_in? %>
+         <div id="notifications"></div>
+
+         <div class="right-space">
+
+          <%= link_to "/notifications" , class:"circle red white-text", id:"notification",remote: true,data: {type: "script"} do%> 
+            <%=current_user.unviewed_notifications_count  %> 
+
+          <% end %> 
+
+         </div>
+
+
+          <%= link_to current_user.username , current_user, class:"white-text right-space"%> 
+
+
+         <%= link_to "Mis amigos" , friendships_path, class:"white-text right-space"%> 
+
             <%= link_to "Cerrar sesiòn" , destroy_user_session_path, method: :delete ,class:"white-text"%> 
          <% end %> 
 
