@@ -29,3 +29,4 @@ Things you may want to cover:
 # RailsTerminado
 # Raails
 # RailsTerminado
+# RedSocial
