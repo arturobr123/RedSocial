@@ -6,13 +6,14 @@ window.snack = (options)->
 
 window.loading = false
 
-$(document).on "page:load page:fetch ready", ()->
+$(document).on "turbolinks:load page:fetch", ()->
+	console.log("hola2");
 	componentHandler.upgradeDom()
 
 	$(".close-parent").on "click", (ev)->
 		$(this).parent().slideUp()
 	
-	console.log("cargo pagina");
+	
 	$("#notification").on "click", (ev)->
 		
 		ev.preventDefault() if $("#notifications").hasClass("active")
@@ -28,3 +29,12 @@ $(document).on "page:load page:fetch ready", ()->
 			window.loading = true
 			url = $(".next_page").attr("href")
 			$.getScript url if url
+
+
+
+
+
+
+
+
+

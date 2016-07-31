@@ -6,7 +6,7 @@ gem 'rails', '~> 5.0.0'
 #gem 'railties', '~> 4.2', '>= 4.2.6'
 #gem 'railties', '~> 5.0.0.beta2'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+gem 'pg'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheetscccccccccccccccccccccccccccccccccccccccccccccccccccccdfddds
